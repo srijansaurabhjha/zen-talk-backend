@@ -1,8 +1,10 @@
 const express = require('express');
 const dotenv= require("dotenv");
+const cors=require('cors');
 // const { chats } = require('./data/data');
 const connectDB = require('./config/conn');
 dotenv.config();
+app.use(cors());
 const userRoutes =require('./routes/userRoutes.js');
 const chatRoutes=require('./routes/chatRoutes.js');
 const messageRoutes=require('./routes/messageRoutes.js');
