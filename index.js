@@ -55,7 +55,7 @@ const server=app.listen(PORT,()=>{
 const io=require("socket.io")(server,{
     pingTimeout:60000,   //If user does not send message for 60 seconds it will close the connection to save bandwidth
     cors:{
-        origin:"https://zen-talk-backend.onrender.com",
+        origin:"*",
     }
 });
 
